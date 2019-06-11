@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <div>User data system.</div>
+
+  <div>
+  	You are logged in as {{fname}} {{lname}}
+  </div>
+
+  <div>
+    {{#unless isPaid}}
+      You have unpaid membership fee, pay <a href="/pay">here.</a>
+    {{/unless}}
+  </div>
+
+  <div>
+  	<a href="/edit/{{uname}}">Edit account info</a>
+    <br>
+    <a href="/list">List of users</a>
+  </div>
+
+  <div>
+  	<a href="/logout">Log out</a>  	
+  </div>
+</body>
+</html>

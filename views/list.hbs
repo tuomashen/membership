@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List</title>
+</head>
+<body>
+  <h1>Users</h1>
+    {{# each contents }}
+            <div>
+                <div>
+                    <h3>{{ this.firstName }} {{ this.lastName}} 
+                    <a href="../edit/{{this.userName}}">Edit</a>
+                    </h3>
+                </div>
+            </div>
+    {{/each}}
+
+  <div>
+  	<a href="/logout">Log out</a>  	
+  </div>
+</body>
+</html>
